@@ -340,7 +340,7 @@
 
                 <div class='div_music_tips'></div>
 				<div class="div_btn" id="div_music" onclick="music_switch()"> <!-- 音乐按钮部分 -->
-				    <img id='img_music' src='https://birthday-1257316755.cos.ap-guangzhou.myqcloud.com/music_note_big.png' style='-webkit-animation:music_play_rotate 1s linear infinite'> 
+				    <img id='img_music' src='https://cdn.jsdelivr.net/gh/ravizhan/birthday/music_note_big.png' style='-webkit-animation:music_play_rotate 1s linear infinite'> 
 				    <audio id="audio_music" autoplay="autoplay" loop="loop">
 				        <source type="audio/mpeg"/>  
 				        <!-- 您的浏览器不支持播放音乐 -->
@@ -364,7 +364,7 @@
 
 
 
-    <script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ravizhan/birthday/jquery-2.0.3.min.js"></script>
     <script src="typed.min.js"></script>
     <script src="support_upload_as.js"></script>
     <script src="jweixin-1.2.0.js"></script>
@@ -377,7 +377,7 @@
 		//打字内容
         var theme_content={"pure_words_content":"\u2764\ufe0f\u4eca\u5929\u662f\u4f60\u7684\u751f\u65e5\uff0c\u613f\u6240\u6709\u7684\u5e78\u798f\u90fd\u56f4\u7ed5\u7740\u4f60\uff0c\u5de6\u8fb9\u662f\u751c\u871c\uff0c\u53f3\u8fb9\u662f\u6ee1\u8db3\uff1b\u613f\u6240\u6709\u7684\u5982\u610f\u90fd\u56f4\u7ed5\u7740\u4f60\uff0c\u524d\u8fb9\u662f\u5e73\u5b89\uff0c\u540e\u9762\u662f\u5065\u5eb7\uff1b\u795d\u4f60\u751f\u65e5\u5feb\u4e50\uff01\u000d\u000a\u7728\u773c\u95f4\uff0c\u4f60\u5df2\u7ecf\u662f\u4e00\u4e2a\u0031\u0035\u5c81\u7684\u7f8e\u5c11\u5973\u5566\u3002\u5728\u65b0\u7684\u4e00\u5c81\u91cc\uff0c\u795d\u4f60\u5f00\u5fc3\u5feb\u4e50\u6bcf\u4e00\u5929\u3002\u000d\u000a\u6bd5\u4e1a\u4e24\u5e74\u4e86\uff0c\u90a3\u4e48\u591a\u7684\u5c0f\u5b66\u540c\u5b66\uff0c\u4f3c\u4e4e\u53ea\u6709\u548c\u4f60\u8fd8\u6709\u8054\u7cfb\u3002\u5c0f\u5b66\u7684\u65f6\u5149\u90a3\u4e48\u5feb\uff0c\u6211\u4eec\u90fd\u6ca1\u6765\u5f97\u53ca\u4e86\u89e3\u5bf9\u65b9\uff0c\u76f4\u5230\u4e0a\u4e86\u521d\u4e2d\uff0c\u53bb\u4e86\u4e0d\u540c\u7684\u5b66\u6821\uff0c\u624d\u5f00\u59cb\u56de\u5fc6\u66fe\u7ecf\u7684\u7f8e\u597d\u3002\u3002\u3002\u3002\u8fd9\u4e5f\u7b97\u662f\u4e2a\u9057\u61be\u5427\u3002\u8fc7\u4e86\u90a3\u4e48\u4e45\uff0c\u4f60\u5e94\u8be5\u4e5f\u60f3\u6211\u4e86\u5427\uff1f\u55ef\uff0c\u6211\u4e5f\u60f3\u4f60\u4e86\u3002\u6709\u65f6\u95f4\u7684\u8bdd\uff0c\u4e00\u8d77\u51fa\u6765\u73a9\u5427\uff08\u90a3\u4e48\u4e45\u6ca1\u89c1\uff0c\u4e5f\u4e0d\u77e5\u9053\u4f60\u73b0\u5728\u957f\u4ec0\u4e48\u6837\u4e86\uff0c\u563b\u563b\ud83d\ude1c\ud83d\ude1c\uff09\u000d\u000a\u6211\u5e0c\u671b\u4ee5\u540e\u4f60\u5728\u4e30\u6cf0\u80fd\u9047\u5230\u66f4\u591a\u77e5\u5df1\uff0c\u53ea\u6709\u4ed6\u4eec\u624d\u662f\u771f\u6b63\u7684\u4e86\u89e3\u4f60\u3002\u4e5f\u5e0c\u671b\u4f60\u5728\u4e30\u6cf0\uff0c\u4e5f\u80fd\u5f00\u5fc3\u5730\u5b66\u4e60\uff0c\u4eab\u53d7\u6210\u957f\uff0c\u4f53\u9a8c\u6210\u529f\uff01\u000d\u000a\u4eca\u5929\u662f\u4f60\u7684\u751f\u65e5\uff0c\u90a3\u4e48\u6211\u5c31\u6ee1\u8db3\u4f60\u4e00\u4e2a\u613f\u671b\u5427\uff0c\u5fae\u4fe1\u544a\u8bc9\u6211\u5427\u3002\u000d\u000a\u6700\u540e\uff0c\u795d\u4f60\u751f\u65e5\u5feb\u4e50\ud83c\udf39\ud83c\udf39\ud83c\udf39",
 		"typed_bool":"typed_y","cursor_char":"cursor_heart","bg_style_pure_words":"bg_opacity",
-		"bg_img":"https://birthday-1257316755.cos.ap-guangzhou.myqcloud.com/2.png","simple_page_content":"&lt;p&gt;&lt;br&gt;&lt;\/p&gt;",
+		"bg_img":"https://cdn.jsdelivr.net/gh/ravizhan/birthday/2.png","simple_page_content":"&lt;p&gt;&lt;br&gt;&lt;\/p&gt;",
 		"video_page_content":"","bg_style":"bg_simple"};
         //console.log(theme_content);
 
@@ -579,7 +579,7 @@
     
 
     <!-- 按需加载，选择此片头时方才加载 -->
-        <script src="start_birthdaycake.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/ravizhan/birthday/start_birthdaycake.js"></script>
 
      
 
@@ -608,7 +608,7 @@
     
 
 
-	<script src='theme_common.js'></script> <!-- 音乐控制和微信设置等公共部分js外部引入 -->
+	<script src='https://cdn.jsdelivr.net/gh/ravizhan/birthday/theme_common.js'></script> <!-- 音乐控制和微信设置等公共部分js外部引入 -->
 
 
 
